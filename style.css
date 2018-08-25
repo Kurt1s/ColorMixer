@@ -1,0 +1,24 @@
+body {
+    background-color: grey;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+}
+h1 h2{
+    flex: 1 1 auto;    
+}
+button{
+    border-radius: 50px;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    text-align: center;
+    border: 2px solid lightgrey;
+}
+.Red {background-color:Red}
+.Yellow {background-color:Yellow}
+.Blue {background-color:Blue}
