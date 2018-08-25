@@ -1,16 +1,27 @@
+
+
 body {
     background-color: grey;
     color: white;
     font-size: 20px;
+
+}
+main {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /* flex-wrap: wrap; */
 }
-h1 h2{
-    flex: 1 1 auto;    
+h1, h2{
+    text-align: center;
+    align-content: center;
+
 }
+#sec, #tert{
+    display: none;
+}
+
+
 button{
     border-radius: 50px;
     width: 100px;
@@ -20,6 +31,7 @@ button{
     border: 2px solid lightgrey;
     font-size: 1em;
 }
+
 .Red {background-color:Red}
 .Yellow {background-color:Yellow}
 .Blue {background-color:Blue}
