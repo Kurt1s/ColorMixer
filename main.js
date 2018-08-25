@@ -34,7 +34,7 @@ function run(){
     function mixColors(colorsArr) { // compares Strings in colorsArray, returns String name of combined color
         var c1 = colorsArr[0];
         var c2 = colorsArr[1];
-        var c3;
+        var c3 = "unknown";
 
         //handling secondary color name result
         if(c1==="Red" && c2==="Yellow" || c2==="Red" && c1==="Yellow")
@@ -65,15 +65,20 @@ function run(){
             else if(c1==="Red" || c2==="Red")
                 c3 = "Red-Violet"   //
         }
+
+        //handler for red + green, yellow + violet, and blue + orange, these colors result in black
         return c3;
     }
 
     function addButton(color){
         //find out if button exists already
-        if($("."+color)[0]) {
+        if(!isValidColor(color))
+            alert("These colors result in Black, when mixing subtractively")
+        else if($("."+color)[0]) {
             alert("button duplicate found")
         }
-        else {
+        
+        else{
             //create new button element w/ color, text and class
             newButton = $("<button class ='"+color+"'></button>")
             newButton.text(color)
@@ -122,5 +127,23 @@ function run(){
                 $("#tertiary").append(newButton);
             }
         }
+    }
+
+    function isValidColor(colorName) {
+        if(
+            (colorName === "Red") || (colorName === "Yellow") || (colorName === "Blue")
+            ||
+            (colorName === "Orange") || (colorName === "Green") || (colorName === "Violet")
+            ||
+            (colorName === "Red-Orange") || (colorName === "Yellow-Orange")
+            ||
+            (colorName === "Yellow-Green") || (colorName === "Blue-Green")
+            ||
+            (colorName === "Blue-Violet") || (colorName === "Red-Violet")
+        )
+            return true;
+        else
+            return false;
+
     }
 }
