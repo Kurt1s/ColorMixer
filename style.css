@@ -18,6 +18,7 @@ button{
     margin: 5px;
     text-align: center;
     border: 2px solid lightgrey;
+    font-size: 1em;
 }
 .Red {background-color:Red}
 .Yellow {background-color:Yellow}
