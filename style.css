@@ -17,13 +17,12 @@ header {
 }
 
 main {
-    /* display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;    
-    text-align: center; */
-    display: flex;
-    justify-content: left;
+    text-align: center;
+
 
 
     /* Dynamically centered container, credits to "robjez" at https://stackoverflow.com/questions/356809/best-way-to-center-a-div-on-a-page-vertically-and-horizontally/18618259#18618259 */
@@ -53,14 +52,14 @@ h3{
 #secondary, #tertiary{
     display: none;
 }
-
+/* 
 #left{
     display:flex;
     left: 0%;
     top:25%;
     color:purple;
 }
-
+ */
 
 
 button{
