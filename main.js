@@ -118,14 +118,14 @@ function run(){
             //figure out where to append the button
             // if color name is secondary
             if(color==="Orange" || color==="Green" || color==="Violet") {
-                $("#sec").show();
+                $("#secondary").show();
                 $("#secondary").append(newButton);
                 
             }
 
             // if color name is tertiary
             else{
-                $("#tert").show();
+                $("#tertiary").show();
                 $("#tertiary").append(newButton);
             }
         }
