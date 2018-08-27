@@ -1,7 +1,7 @@
 
 
 body {
-    color: grey;
+    color: black;
     font-size: 1.5em;
     font-family: 'VT323', monospace;
 }
@@ -42,12 +42,14 @@ h1, h2, h3{
 }
 h1{
     font-size: 2em;
+    color:#00ff00
 }
 h2 {
     font-size: 1.5em;
 }
 h3{
     font-size: .75em;
+    color: #8090BB;
 }
 #secondary, #tertiary{
     display: none;

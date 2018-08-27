@@ -66,14 +66,19 @@ function run(){
                 c3 = "Red-Violet"   //
         }
 
-        //handler for red + green, yellow + violet, and blue + orange, these colors result in black
+        else {
+            //handler for red + green, yellow + violet, and blue + orange . . . . Goes here
+        }
+        
         return c3;
     }
 
     function addButton(color){
         //find out if button exists already
-        if(!isValidColor(color))
+        if(!isValidColor(color)){
             alert("These colors result in Black, when mixing subtractively")
+
+        }
         else if($("."+color)[0]) {
             alert("button duplicate found")
         }
