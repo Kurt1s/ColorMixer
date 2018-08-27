@@ -1,9 +1,9 @@
 
 
 body {
-    background-color: grey;
-    color: white;
+    color: grey;
     font-size: 1.5em;
+    font-family: 'VT323', monospace;
 }
 header {
     position: absolute;
@@ -63,7 +63,7 @@ h3{
 
 
 button{
-    
+    font-family: 'VT323', monospace;
     border-radius: 50%;
     width: 4.5em;
     height: 4.5em;
@@ -74,10 +74,10 @@ button{
     /* outline effect */
     color: white;
     text-shadow:
-    -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000;  
+    -1px -1px 0 #555,
+    1px -1px 0 #555,
+    -1px 1px 0 #555,
+    1px 1px 0 #555;  
 }
 
 
